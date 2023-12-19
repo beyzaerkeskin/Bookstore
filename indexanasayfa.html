@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kitap Gemisi</title>
+    
+  </head>
+
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
+     "></script>
+    
+      
+
+  <body>
+    <header>
+
+      
+      <nav class="navbar">
+        
+        <div class="ikon">
+          
+            <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-user"></i>
+          <i class="fa-solid fa-heart"></i>
+          <button class="cart-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+            <span class="cart-items">0</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+            
+          </i>
+        </div>
+        
+
+        <div class="input">
+          <input type="text" placeholder="E-posta" /><br />
+          <input type="password" placeholder="Şifre" /> <br />
+
+          <div class="buton">
+            <button class="btn">Giriş Yap</button>
+            <button class="btn">Üye Ol</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="offcanvas offcanvas-end" id="offcanvasRight">
+      <div class="offcanvas-header">
+        <h5>Sepetim</h5>
+        <button class="btn-close" type="buton" data-bs-dismiss="offcanvas"
+        aria-label="Close">
+          
+        </button>
+
+      </div>
+
+      <div class="offcanvas-body">
+        <div class="shopping-cart">
+          <ul class="cart-list">
+            <li class="cart-list-item">
+              <div class="cart-left">
+                <img class="cart-left-image" src="images/Edebiyat/geön werther.jpg" alt="">
+              </div>
+              <div class="cart-left-info">
+                <a class="cart-left-info-title" href="#">Genç Werther'in Acıları</a>
+              <span class="cart-left-info-price">150 tl</span>
+              
+              </div>
+              
+             
+             <div class="cart-right">
+              <div class="cart-right-quantity">
+                  <button class="quantity-minus">
+                      <i class="fas fa-minus"></i>
+                  </button>
+                  <span class="quantity">0</span>
+                  <button class="quantity-plus">
+                      <i class="fas fa-plus"></i>
+                  </button>
+              </div>
+              <div class="cart-right-remove">
+                  <button class="cart-remove-btn">
+                      <i class="fas fa-trash"></i>
+                  </button>
+              </div>
+          </div>
+
+             </div>
+            </li>
+          </ul>
+          <div class="shopping-cart-bottom">
+            <div class="total">
+              <div class="total-title">Toplam:
+              </div>
+              <span class="total-value">150 tl</span>
+          
+            </div>
+            <button class="btn-clear" type="button">Sepeti Temizle</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="basliklist">
+      <ul>
+        <li>
+          <button
+            class="btn-bootnav"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasBottom"
+            aria-controls="offcanvasBottom">
+            Yeni Çıkanlar
+          </button>
+
+          <div
+            class="offcanvas offcanvas-bottom"
+            tabindex="-1"
+            id="offcanvasBottom"
+            aria-labelledby="offcanvasBottomLabel">
+           
+            <div class="box1">
+              <h5>Hayvan Çiftliği</h5>
+              <img src="images/Edebiyat/hayvan çiftliği.jpg" alt="" />
+              <div>    
+                  <a href="#">Sepete Ekle</a>
+                </div>
+            </div>
+
+             <div class="box2">
+              <h5>1984</h5>
+              <img src="images/anasayfa/1984.jpg" alt="">
+              <div>
+                <a href="#">Sepete Ekle</a>
+              </div>
+            </div> 
+
+            <div class="box3">
+              <h5>Kürk Mantolu Madonna</h5>
+              <img src="images/Edebiyat/Kürk mantolu.jpg" alt="">
+              <div>
+                <a href="#">Sepete Ekle</a>
+              </div>
+            </div> 
+
+            <div class="box4">
+              <h5>Devlet</h5>
+              <img src="images/Felsefe/devlet.jpg" alt="">
+              <div>
+                <a href="#">Sepete Ekle</a>
+              </div>
+            </div> 
+
+            <div class="box5">
+              <h5>Simyacı</h5>
+              <img src="images/Edebiyat/simyacı.jpg" alt="">
+              <div>
+                <a href="#">Sepete Ekle</a>
+              </div>
+            </div>
+
+
+
+
+
+           </div>
+
+           
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+
+            <li></li>
+
+            <button
+              class="btn-bootnav"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasBottom"
+              aria-controls="offcanvasBottom">
+              En Çok Satanlar
+            </button>
+
+            <div
+              class="offcanvas offcanvas-bottom"
+              tabindex="-1"
+              id="offcanvasBottom"
+              aria-labelledby="offcanvasBottomLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasBottomLabel">
+                  Offcanvas bottom
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body small">...</div>
+            </div>
+
+            <li>
+              <button
+                class="btn-bootnav"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasBottom"
+                aria-controls="offcanvasBottom">
+                Yazardan İmzalı
+              </button>
+
+              <div
+                class="offcanvas offcanvas-bottom"
+                tabindex="-1"
+                id="offcanvasBottom"
+                aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasBottomLabel">
+                    Offcanvas bottom
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body small">...</div>
+              </div>
+            </li>
+
+            <li>
+              <button
+                class="btn-bootnav"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasBottom"
+                aria-controls="offcanvasBottom">
+                Popüler
+              </button>
+
+              <div
+                class="offcanvas offcanvas-bottom"
+                tabindex="-1"
+                id="offcanvasBottom"
+                aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasBottomLabel">
+                    Offcanvas bottom
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body small">...</div>
+              </div>
+
+          </div>
+
+          <a class="btn-boot" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            TÜRLER
+          </a>
+         
+          
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">TÜRLER</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="dropdown mt-3">
+               <div class="offcanvas-body">
+              <ul>
+              
+                <li><a href="indexanasayfa.html" class="menu-item">Anasayfa</a></li> <br>
+                <li><a href="indexfelsefe.html" class="menu-item">Felsefe</a></li> <br>
+                <li><a href="indexbilim.html" class="menu-item">Bilim</a></li> <br>
+                <li><a href="#sayfa" class="menu-item">Roman</a></li>  <br>
+                <li><a href="i#sayfa" class="menu-item">Kişisel Gelişim</a></li> <br>
+                <li><a href="#sayfa" class="menu-item">Tarih</a></li> <br>
+                <li><a href="#sayfa" class="menu-item">Fantastik Kurgu</a></li> <br>
+                <li><a href="#sayfa" class="menu-item">Eğitim & Araştırma</a></li> <br>
+                
+
+            </ul>
+        </div>
+    </div>
+    
+   
+    <div id="anasayfa">
+        
+    </div>
+    
+    <div id="felsefe">
+        
+    </div>
+    
+    <div id="bilim">
+       
+    </div>
+
+    <div id="sayfa">
+
+    </div>
+
+    <div id="sayfa">
+
+    </div>
+
+    <div id="sayfa">
+
+    </div>
+     <div id="sayfa">
+
+     </div>
+
+     <div id="sayfa">
+
+     </div>
+
+            </div>
+          </div>
+          <div class="products">
+            <div class="box">
+              <img src="images/anasayfa/1984.jpg" alt="" />
+              <h3>1984</h3>
+              <div class="content">
+                <span>90 tl</span> <br />
+                <a href="#" class="link">Sepete ekle</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="images/anasayfa/Babaya Mektup.jpg" alt="" />
+              <h3>Babaya Mektup</h3>
+              <div class="content">
+                <span>120 tl</span> <br />
+                <a href="#" class="link">Sepete ekle</a>
+              </div>
+            </div>
+            <div class="box">
+              <img
+                src="images/anasayfa/Bir İdam Mahkumunun Son Günü.jpg"
+                alt="" />
+              <h3>Bir İdam Mahkumunun Son Günü</h3>
+              <div class="content">
+                <span>50 tl</span> <br />
+                <a href="#" class="link">Sepete ekle</a>
+              </div>
+            </div>
+
+            <div class="box">
+              <img src="images/anasayfa/Bir Ömür Nasıl Yaşanır.jpg" alt="" />
+              <h3>Bir Ömür Nasıl Yaşanır</h3>
+              <div class="content">
+                <span>150 tl</span> <br />
+                <a href="#" class="link">Sepete ekle</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="images/anasayfa/İçimizdeki Şeytan.jpg" alt="" />
+              <h3>İçimizdeki Şeytan</h3>
+              <div class="content">
+                <span>50 tl</span> <br />
+                <a href="#" class="link">Sepete ekle</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="images/anasayfa/Olağan ÜStü Bir Gece.jpg" alt="" />
+              <h3>Olağanüstü Bir Gece</h3>
+              <div class="content">
+                <span>40 tl</span> <br />
+                <a href="#" class="link">Sepete ekle</a>
+              </div>
+            </div>
+            <div class="box">
+              <img src="images/anasayfa/Reader At Work I.jpg" alt="" />
+              <h3>Reader At Work I</h3>
+              <div class="content">
+                <span>190 tl</span> <br />
+                <a href="#" class="link">Sepete ekle</a>
+              </div>
+            </div>
+            <div class="box">
+              <img
+                src="images/anasayfa/Senin Cahilliğin Benim Yaşamımı Etkiliyor.jpg"
+                alt="" />
+              <h3>Senin Cahilliğin Benim Yaşamımı Etkiliyor</h3>
+              <div class="content">
+                <span>190 tl</span> <br />
+                <a href="#" class="link">Sepete ekle</a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
